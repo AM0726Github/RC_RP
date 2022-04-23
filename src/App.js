@@ -1,7 +1,6 @@
 import './App.css';
 
 import Header from "./components/Header";
-import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import About from './components/About'
 import Contact from './components/Contact';
@@ -18,9 +17,7 @@ import {
 function App() {
   return (
     <Router>
-      <Header>
-        <Navigation/>
-      </Header>
+      <Header/>
       <Routes>
         {/* <Route exact path="/" render={() => <Navigate to="/about" />} /> */}
         <Route path="/" exact element={<Home />} />
